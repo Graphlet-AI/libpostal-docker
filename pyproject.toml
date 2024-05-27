@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "libpostal-docker"
+version = "0.1.0"
+description = "Try Libpostal by typing addresses into its CLI in one command: docker compose up"
+authors = ["Russell Jurney <russell.jurney@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.24.0"
+
+[project]
+name = "libpostal-docker"
+version = "0.1.0"
+
+[tool.poetry.urls]
+"Blog Post" = "https://"
+"Code Repository" = "https://github.com/rjurney/libpostal-reborn"
+"Bug Tracker" = "https://github.com/rjurney/libpostal-reborn/issues"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+postal = "^1.1.10"
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
