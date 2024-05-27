@@ -7,9 +7,6 @@ license = "MIT"
 readme = "README.md"
 package-mode = false
 
-[tool.poetry.group.dev.dependencies]
-ipython = "^8.24.0"
-
 [project]
 name = "libpostal-docker"
 version = "0.1.0"
@@ -22,6 +19,9 @@ version = "0.1.0"
 [tool.poetry.dependencies]
 python = "^3.11"
 postal = "^1.1.10"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.24.0"
 
 [build-system]
 requires = ["poetry-core>=1.8.0"]
