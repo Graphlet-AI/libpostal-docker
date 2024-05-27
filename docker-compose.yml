@@ -3,7 +3,7 @@ version: "3.8"
 services:
   
   jupyter:
-    image: rjurney/libpostal-docker:0.1.0
+    image: rjurney/libpostal-docker:latest
     build:
       context: .
       dockerfile: Dockerfile
