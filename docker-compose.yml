@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  
+  jupyter:
+    image: rjurney/libpostal-docker:0.1.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: libpostal
+    restart: always
+    command: tail -f /dev/null
+    stdin_open: true
+    tty: true  
+    deploy:
+      resources:
+        limits:
+          memory: 64G
+          cpus: "8"
+        reservations:
+          cpus: "2"
+          memory: 16G
