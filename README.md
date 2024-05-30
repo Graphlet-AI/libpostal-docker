@@ -10,11 +10,12 @@ The only prerequisite for this project is Docker. If you don't have it installed
 
 ## TLDR Interactive Mode
 
-This mode lets you type addresses and see how Libpostal parses them. To run it, use the following commands:
+This mode lets you type addresses and see how Libpostal parses them. To run it, use the following three commands:
 
 ```bash
 docker pull rjurney/libpostal-docker:latest
-docker run -it rjurney/libpostal-docker:latest address_parser
+docker run -it rjurney/libpostal-docker:latest bash
+../libpostal/src/address_parser
 ```
 
 ## Trying the PyPostal Python Library
@@ -24,11 +25,6 @@ To run the Libpostal Docker container, you can use the following commands:
 ```bash
 docker pull rjurney/libpostal-docker:latest
 docker run -it rjurney/libpostal-docker:latest bash
-```
-
-Now run:
-
-```bash
 ipython
 ```
 
@@ -36,7 +32,6 @@ And import and use the [pypostal](https://github.com/openvenues/pypostal) librar
 
 ```python
 from postal.parser import parse_address
-
 
 parse_address("781 Franklin Ave Crown Heights Brooklyn NYC NY 11216 USA")
 ```
